@@ -8,10 +8,10 @@ import string
 from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split
 nltk.download('stopwords')
-from hate.logger import logging
-from hate.exception import CustomException
-from hate.entity.config_entity import DataTransformationConfig
-from hate.entity.artifact_entity import DataTransformationArtifacts, DataIngestionArtifacts, DataValidationArtifacts
+from xray.logger import logging
+from xray.exception import CustomException
+from xray.entity.config_entity import DataTransformationConfig
+from xray.entity.artifact_entity import DataTransformationArtifacts, DataIngestionArtifacts, DataValidationArtifacts
 
 
 class DataTransformation:

@@ -5,9 +5,11 @@ import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 
-project_name = "hate"
+project_name = "xray"
 
 list_of_files = [
+    f'test/integrationtest/__init__.py',
+    f'test/unittest/__init__.py',
     f'{project_name}/components/__init__.py',
     f'{project_name}/components/data_ingestion.py',
     f'{project_name}/components/data_transformation.py',
@@ -17,6 +19,7 @@ list_of_files = [
     f'{project_name}/components/model_pusher.py',
     f'{project_name}/configuration/__init__.py',
     f'{project_name}/configuration/gcloud_syncer.py',
+    f'{project_name}/configuration/cloud_storage.py',
     f'{project_name}/constants/__init__.py',    
     f'{project_name}/entity/__init__.py',    
     f'{project_name}/entity/config_entity.py',   

@@ -1,25 +1,25 @@
 import inspect
 import sys
-from hate.logger import logging
-from hate.exception import CustomException
-from hate.components.data_ingestion import DataIngestion
-from hate.components.data_validation import DataValidation
-from hate.components.data_transformation import DataTransformation
-from hate.components.model_evaluation import ModelEvaluation
-from hate.components.model_pusher import ModelPusher
-from hate.entity.config_entity import (DataIngestionConfig, 
+from xray.logger import logging
+from xray.exception import CustomException
+from xray.components.data_ingestion import DataIngestion
+from xray.components.data_validation import DataValidation
+from xray.components.data_transformation import DataTransformation
+from xray.components.model_evaluation import ModelEvaluation
+from xray.components.model_pusher import ModelPusher
+from xray.entity.config_entity import (DataIngestionConfig, 
                                        DataValidationConfig, 
                                        DataTransformationConfig, 
                                        ModelTrainerConfig, 
                                        ModelEvaluationConfig, 
                                        ModelPusherConfig)
-from hate.entity.artifact_entity import (DataIngestionArtifacts, 
+from xray.entity.artifact_entity import (DataIngestionArtifacts, 
                                          DataValidationArtifacts, 
                                          DataTransformationArtifacts, 
                                          ModelTrainerArtifacts,
                                          ModelEvaluationArtifacts, 
                                          ModelPusherArtifacts)
-from hate.components.model_trainer import ModelTrainer
+from xray.components.model_trainer import ModelTrainer
 
 class TrainingPipeline:
     def __init__(self):

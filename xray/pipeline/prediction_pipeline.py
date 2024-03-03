@@ -5,14 +5,14 @@ import keras
 import pickle
 import inspect
 from PIL import Image
-from hate.logger import logging
-from hate.constants import *
-from hate.exception import CustomException
+from xray.logger import logging
+from xray.constants import *
+from xray.exception import CustomException
 from keras.utils import pad_sequences
-from hate.configuration.gcloud_syncer import GCloudSync
-from hate.components.data_transformation import DataTransformation
-from hate.entity.config_entity import DataTransformationConfig
-from hate.entity.artifact_entity import DataIngestionArtifacts
+from xray.configuration.gcloud_syncer import GCloudSync
+from xray.components.data_transformation import DataTransformation
+from xray.entity.config_entity import DataTransformationConfig
+from xray.entity.artifact_entity import DataIngestionArtifacts
 
 
 class PredictionPipeline:

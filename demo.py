@@ -1,6 +1,6 @@
-from hate.logger import logging
-from hate.exception import CustomException
-from hate.configuration.gcloud_syncer import GCloudSync
+from xray.logger import logging
+from xray.exception import CustomException
+from xray.configuration.gcloud_syncer import GCloudSync
 
 import sys
 

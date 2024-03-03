@@ -5,16 +5,16 @@ import inspect
 import pandas as pd
 import numpy as np
 import inspect
-from hate.logger import logging
-from hate.exception import CustomException
-from hate.entity.config_entity import ModelEvaluationConfig
-from hate.entity.artifact_entity import ModelTrainerArtifacts, ModelEvaluationArtifacts, DataTransformationArtifacts
+from xray.logger import logging
+from xray.exception import CustomException
+from xray.entity.config_entity import ModelEvaluationConfig
+from xray.entity.artifact_entity import ModelTrainerArtifacts, ModelEvaluationArtifacts, DataTransformationArtifacts
 from keras.preprocessing.text import Tokenizer
 import tensorflow as tf
 from keras.utils import pad_sequences
-from hate.ml.model import ModelArchitecture
-from hate.constants import *
-from hate.configuration.gcloud_syncer import GCloudSync
+from xray.ml.model import ModelArchitecture
+from xray.constants import *
+from xray.configuration.gcloud_syncer import GCloudSync
 from sklearn.metrics import confusion_matrix
 
 class ModelEvaluation:
